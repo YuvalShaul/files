@@ -1,4 +1,3 @@
 # files
 A CI/CD demo project 
-one new line.
-line for fix-1
+Cleaning everything for branch fix-1.
