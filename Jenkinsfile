@@ -1,10 +1,19 @@
 pipeline {
     agent any
     stages { 
-        stage('one') {
+        stage('build') {
             steps {
-                echo 'Hello World'
+                echo 'build'
+            }
+        }
+        stage('Deploy'){
+            when{
+                branch "main"
+            }
+            steps{
+                echo "deploy"
             }
         }
     }
 }
+
