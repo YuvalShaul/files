@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 echo 'build'
+                sh 'docker build . -t my_clock:1'
+                sh 'docker push yuvalshaul/my_clock:1'
             }
         }
         stage('Moshe') {
