@@ -6,6 +6,14 @@ pipeline {
                 echo 'build'
             }
         }
+        stage('Moshe') {
+            when{
+                branch "moshe"
+            }
+            steps {
+                echo 'build'
+            }
+        }
         stage('Deploy'){
             when{
                 branch "main"
