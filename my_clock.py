@@ -11,5 +11,5 @@ while(True):
 
         # dd/mm/YY H:M:S
         dt_string = now.strftime("%d/%m/%Y %H:%M:%S\n")
-        timefile.write(dt_string + " !!! ")
+        timefile.write(dt_string + " !!! ---")
     time.sleep(3)
