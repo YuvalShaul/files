@@ -6,6 +6,7 @@ pipeline {
                 echo 'build'
 		sh 'echo Build number is: $BUILD_NUMBER.'
                 sh 'docker build . -t yuvalshaul/my_clock:1'
+		sh 'docker login'
                 sh 'docker push yuvalshaul/my_clock:1'
             }
         }
